@@ -1,0 +1,57 @@
+#If you need any help try asking by the spigot page or asking in our discord: https://discord.gg/3KWqjZUGVD
+
+#in percentage
+probability: 1
+#whether the chests vanish or not
+#I do not recommend setting this to false as if not your world will be full of useless chests.
+Do-Chests-Disappear: true
+#Time after the chests vanishes, in ticks. Only works if what is above is true.
+#(20 ticks are a second) set by default to 20 seconds or 400 ticks
+Disappearing-Time: 400
+#Only chests owners will be able to break their chests
+#or with the permission spawningchest.break
+Break-Chests: true
+#Message shown when you try to break a chests that you haven't spawned
+Break-Message: "&cThis is not your chest!"
+Interaction-Message: "&cThis is not your chest!"
+Money_message: "&cYou have received {money}"
+#Blocks that makes you have a probability to spawn a chests.
+AllowedBlocks:
+  - "STONE"
+  - "DIAMOND_ORE"
+  - "DEEPSLATE_DIAMOND_ORE"
+
+
+#You most likely will have to restart or reload for this to show changes.
+#You can check item id's from this page: https://minecraft-ids.grahamedgecombe.com
+#Money will only work if maxAmount is not 0.
+Money:
+  minAmount: 0
+  maxAmount: 10
+LootTable:
+  0:
+    material: IRON_SWORD
+    name: "IRON SWORD"
+    chance: 20
+    minAmount: 1
+    maxAmount: 1
+  1:
+    material: DIAMOND
+    chance: 10
+    minAmount: 12
+    maxAmount: 35
+  2:
+    material: WOODEN_PICKAXE
+    name: "&3The fast pickaxe"
+    chance: 100
+    minAmount: 1
+    maxAmount: 1
+    enchantments:
+      EFFICIENCY: 2
+  3:
+    material: CHAINMAIL_CHESTPLATE
+    chance: 75
+    minAmount: 1
+    maxAmount: 1
+    enchantments:
+      PROTECTION: 3

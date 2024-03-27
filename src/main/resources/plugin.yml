@@ -1,0 +1,23 @@
+name: SpawningChests
+version: '${project.version}'
+main: me.spawningchests.SpawningChests
+api-version: '1.20'
+commands:
+  chestreload:
+    permission: spawningchest.reload
+    permission-message: You don't have the required permission!
+    aliases:
+      - cr
+softdepend:
+  - Vault
+  - PlaceholderAPI
+permissions:
+  spawningchest.reload:
+    description: Let you reload the config
+    default: op
+  spawningchest.interact:
+    description: Let you interact with all the chests
+    default: op
+  spawningchest.break:
+    description: Let you break all the chests
+    default: op
